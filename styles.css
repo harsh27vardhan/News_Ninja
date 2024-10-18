@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    color: rgb(223, 223, 223);
+}
+header form input{
+    font-size: 1rem;
+}
+form{
+    background-color: white;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+form button{
+    background-color: white;
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 8px;
+    padding: 8px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 8px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgb(201, 201, 201);
+    width: 350px;
+    position: relative;
+}
+.card .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card img{
+    width: 100%;
+}
+.card .source{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(255, 255, 255, 0.785);
+    padding: 2px 4px;
+    border-radius: 8px;
+}
+.card .author{
+    color: gray;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 30%;
+    max-width: 200px;
+}
+.filters div{
+    display: flex;
+    justify-content: end;
+    align-items: stretch;
+    width: 100%;
+}
+.filters select{
+    background-color: rgb(226, 226, 226);
+    color: black;
+    border-radius: 8px;
+    width: 25%;
+}
+#no-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+@media (max-width: 600px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .filters{
+        width: 200px;
+    }
+    .filters div{
+        justify-content: center;
+        
+    }
+}

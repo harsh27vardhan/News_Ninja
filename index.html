@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Ninja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+</head>
+<body>
+    <header>
+        <h1>News Ninja</h1>
+        <form action="">
+            <input id="search" type="text" placeholder="Search news Here..."/>
+            <button id="btn"><span class="material-symbols-outlined">
+                search
+                </span></button>
+        </form>
+        <div class="filters">
+            <div class="sort">
+                <label for="">Sort by:</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="publishedAt" selected>publishedAt</option>
+                    <option value="popularity">popularity</option>
+                    <option value="relevancy">relevancy</option>
+                </select>
+            </div>
+            <div class="lang">
+                <label for="">Language:</label>
+                <select name="dropdown" id="languages">
+                    <option value="" selected>All</option>
+                    <!--<option value="de">DE</option>
+                    <option value="ar">Arabic</option> -->
+                </select>
+            </div>
+            <div class="tdc">
+                <label for="">SearchIn:</label>
+                <select name="dropdown" id="searchIn">
+                    <option value="title" selected>title</option>
+                    <option value="description">description</option>
+                    <option value="content">content</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main id="card-container">
+        <!-- <div class="card">
+            <span class="source">source</span>
+            <img class="image" src="https://via.placeholder.com/400x250" alt="">
+            <h2 class="title">News1</h2>
+            <span class="author published">Author | date time</span>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda animi adipisci. Eligendi saepe voluptates velit consequuntur libero ratione accusantium quasi ipsum molestias natus dolor perspiciatis vero quisquam, recusandae voluptate?</p>
+        </div> -->
+    </main>
+    <div id="no-content"></div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
